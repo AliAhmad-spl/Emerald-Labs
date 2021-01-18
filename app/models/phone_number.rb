@@ -1,3 +1,4 @@
 class PhoneNumber < ApplicationRecord
-  has_and_belongs_to_many :user, through: :user_number 
+  has_many :user_numbers
+  has_many :user, through: :user_numbers 
 end
